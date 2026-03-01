@@ -2,6 +2,10 @@ package com.pula.survey.sync.domain.model
 
 import java.util.UUID
 
+/**
+ * Domain model for a single survey response.
+ * Stored locally with [SyncStatus]; answers may include nested [SurveyAnswer.RepeatingSection].
+ */
 data class SurveyResponse(
     val id: UUID,
     val farmerId: String,

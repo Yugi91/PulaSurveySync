@@ -2,6 +2,7 @@ package com.pula.survey.sync.domain.model
 
 import kotlinx.serialization.Serializable
 
+/** Single answer or repeating section; supports arbitrary nesting for JSON storage in Room. */
 @Serializable
 sealed class SurveyAnswer {
     @Serializable
